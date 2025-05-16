@@ -3,113 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ComfortWear SG</title>
+  <title>NLT SG</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-white text-black font-sans">
+<body class="bg-white text-black font-serif text-lg leading-relaxed">
 
   <!-- Header -->
-  <header class="bg-green-50 p-6 shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-800">ComfortWear SG</h1>
-      <nav class="space-x-4 text-lg">
-        <button class="bg-transparent text-black hover:underline">Shop Now</button>
-        <button class="bg-transparent text-black hover:underline">New Arrivals</button>
-        <button class="bg-transparent text-black hover:underline">Sale</button>
-        <button class="bg-transparent text-black hover:underline">Size Guide</button>
-        <button class="bg-transparent text-black hover:underline">Contact Us</button>
+  <header class="bg-green-100 p-8 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <h1 class="text-3xl font-bold text-green-900">NLT SG</h1>
+      <nav class="space-x-6 text-xl">
+        <button class="bg-transparent text-black hover:underline focus:outline-none">Shop Now</button>
+        <button class="bg-transparent text-black hover:underline focus:outline-none">New Arrivals</button>
+        <button class="bg-transparent text-black hover:underline focus:outline-none">Sale</button>
+        <button class="bg-transparent text-black hover:underline focus:outline-none">Size Guide</button>
+        <button class="bg-transparent text-black hover:underline focus:outline-none">Contact Us</button>
       </nav>
     </div>
   </header>
 
   <!-- Banner Slider -->
-  <section class="bg-blue-100 p-8 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Discover Comfort & Style</h2>
-    <p class="text-lg mb-6">Explore our new arrivals tailored for your comfort</p>
-    <button class="bg-green-700 text-white text-lg px-6 py-3 rounded">Browse Collection</button>
+  <section class="bg-blue-100 p-10 text-center">
+    <h2 class="text-4xl font-bold mb-6">Discover Comfort & Style</h2>
+    <p class="text-2xl mb-8">Explore our new arrivals tailored for your comfort</p>
+    <button class="bg-green-800 text-white text-xl px-8 py-4 rounded-lg focus:outline-none">Browse Collection</button>
   </section>
 
   <!-- Trust Signals -->
-  <section class="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-4">
-    <div class="border rounded shadow p-4 text-center">
-      <p class="font-bold text-green-700">Secure Checkout</p>
-      <p>All payments are encrypted and safe.</p>
+  <section class="max-w-6xl mx-auto p-8 grid md:grid-cols-3 gap-6 text-center">
+    <div class="border rounded-lg shadow p-6 bg-green-50">
+      <p class="font-extrabold text-green-800 text-xl">Secure Checkout</p>
+      <p class="mt-2">All payments are encrypted and safe.</p>
     </div>
-    <div class="border rounded shadow p-4 text-center">
-      <p class="font-bold text-green-700">Verified Reviews</p>
-      <p>Trusted by seniors across Singapore.</p>
+    <div class="border rounded-lg shadow p-6 bg-green-50">
+      <p class="font-extrabold text-green-800 text-xl">Verified Reviews</p>
+      <p class="mt-2">Trusted by seniors across Singapore.</p>
     </div>
-    <div class="border rounded shadow p-4 text-center">
-      <p class="font-bold text-green-700">Easy Returns</p>
-      <p>30-day hassle-free returns.</p>
+    <div class="border rounded-lg shadow p-6 bg-green-50">
+      <p class="font-extrabold text-green-800 text-xl">Easy Returns</p>
+      <p class="mt-2">30-day hassle-free returns.</p>
     </div>
   </section>
 
   <!-- Product Listings -->
-  <section class="max-w-6xl mx-auto p-6">
-    <h3 class="text-2xl font-bold mb-4">Featured Products</h3>
-    <div class="grid md:grid-cols-3 gap-6">
+  <section class="max-w-6xl mx-auto p-8">
+    <h3 class="text-3xl font-bold mb-6 text-center">Featured Products</h3>
+    <div class="grid md:grid-cols-3 gap-8">
 
-      <div class="border rounded shadow p-4">
-        <img src="/images/cardigan.jpg" alt="Soft cotton cardigan" class="mb-4 w-full" />
-        <p class="text-xl font-semibold">Cotton Comfort Cardigan</p>
-        <p>Material: 100% Cotton. Fit: Relaxed. Colors: Blue, Beige</p>
-        <p class="font-bold text-green-800">SGD 59.90</p>
-        <button class="bg-green-700 text-white mt-2 w-full py-2 rounded">Add to Cart</button>
+      <div class="border rounded-xl shadow-lg p-6 bg-white">
+        <img src="images/Casuals1.png" alt="Soft cotton cardigan" class="mb-6 w-full rounded" />
+        <p class="text-2xl font-semibold">Cotton Comfort Cardigan</p>
+        <p class="mt-2">Material: 100% Cotton. Fit: Relaxed. Colors: Blue, Beige</p>
+        <p class="font-bold text-green-800 mt-2 text-xl">SGD 59.90</p>
+        <button class="bg-green-800 text-white mt-4 w-full py-3 text-lg rounded focus:outline-none">Add to Cart</button>
       </div>
 
-      <div class="border rounded shadow p-4">
-        <img src="/images/pants.jpg" alt="Elastic waist pants" class="mb-4 w-full" />
-        <p class="text-xl font-semibold">EasyFit Pants</p>
-        <p>Material: Cotton Blend. Fit: Relaxed. Colors: Grey, Navy</p>
-        <p class="font-bold text-green-800">SGD 45.90</p>
-        <button class="bg-green-700 text-white mt-2 w-full py-2 rounded">Add to Cart</button>
+      <div class="border rounded-xl shadow-lg p-6 bg-white">
+        <img src="images/scrub1.jpg" alt="Elastic waist pants" class="mb-6 w-full rounded" />
+        <p class="text-2xl font-semibold">EasyFit Pants</p>
+        <p class="mt-2">Material: Cotton Blend. Fit: Relaxed. Colors: Grey, Navy</p>
+        <p class="font-bold text-green-800 mt-2 text-xl">SGD 45.90</p>
+        <button class="bg-green-800 text-white mt-4 w-full py-3 text-lg rounded focus:outline-none">Add to Cart</button>
       </div>
 
-      <div class="border rounded shadow p-4">
-        <img src="/images/tshirt.jpg" alt="Breathable t-shirt" class="mb-4 w-full" />
-        <p class="text-xl font-semibold">Breathe Easy Tee</p>
-        <p>Material: Bamboo Cotton. Fit: Relaxed. Colors: White, Mint</p>
-        <p class="font-bold text-green-800">SGD 29.90</p>
-        <button class="bg-green-700 text-white mt-2 w-full py-2 rounded">Add to Cart</button>
+      <div class="border rounded-xl shadow-lg p-6 bg-white">
+        <img src="images/scrub2.jpg" alt="Breathable t-shirt" class="mb-6 w-full rounded" />
+        <p class="text-2xl font-semibold">Breathe Easy Tee</p>
+        <p class="mt-2">Material: Bamboo Cotton. Fit: Relaxed. Colors: White, Mint</p>
+        <p class="font-bold text-green-800 mt-2 text-xl">SGD 29.90</p>
+        <button class="bg-green-800 text-white mt-4 w-full py-3 text-lg rounded focus:outline-none">Add to Cart</button>
       </div>
 
     </div>
   </section>
 
   <!-- Size Guide -->
-  <section class="bg-green-50 p-6">
+  <section class="bg-green-50 p-8">
     <div class="max-w-4xl mx-auto">
-      <h3 class="text-2xl font-bold mb-4">Size Guide</h3>
-      <p class="mb-2">Use a measuring tape and refer to the chart below:</p>
-      <ul class="list-disc pl-6">
-        <li>Measure bust/chest, waist, and hip in cm or inches.</li>
-        <li>Compare with our size chart for best fit.</li>
-        <li>Choose a relaxed fit for maximum comfort.</li>
+      <h3 class="text-3xl font-bold mb-6">Size Guide</h3>
+      <p class="mb-4 text-xl">Use a measuring tape and refer to the chart below:</p>
+      <ul class="list-disc pl-8 text-lg">
+        <li class="mb-2">Measure bust/chest, waist, and hip in cm or inches.</li>
+        <li class="mb-2">Compare with our size chart for best fit.</li>
+        <li class="mb-2">Choose a relaxed fit for maximum comfort.</li>
       </ul>
     </div>
   </section>
 
   <!-- FAQ & Support -->
-  <section class="max-w-4xl mx-auto p-6">
-    <h3 class="text-2xl font-bold mb-4">FAQs</h3>
-    <ul class="list-disc pl-6 text-lg">
-      <li>Delivery takes 2–4 business days within Singapore.</li>
-      <li>Returns are accepted within 30 days with tags intact.</li>
-      <li>Our products can be machine washed unless stated otherwise.</li>
+  <section class="max-w-4xl mx-auto p-8">
+    <h3 class="text-3xl font-bold mb-6">FAQs</h3>
+    <ul class="list-disc pl-8 text-xl">
+      <li class="mb-2">Delivery takes 2–4 business days within Singapore.</li>
+      <li class="mb-2">Returns are accepted within 30 days with tags intact.</li>
+      <li class="mb-2">Our products can be machine washed unless stated otherwise.</li>
     </ul>
-    <div class="mt-6">
-      <h4 class="text-xl font-semibold mb-2">Contact Us</h4>
-      <p>Email: support@comfortwear.sg | Phone: +65 6123 4567</p>
+    <div class="mt-8">
+      <h4 class="text-2xl font-semibold mb-3">Contact Us</h4>
+      <p class="text-xl">Email: support@NLT.sg</p>
+      <p class="text-xl">Phone: +65 6123 4567</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-100 p-6 text-center text-sm">
-    <p>&copy; 2025 ComfortWear SG. All rights reserved. | Language: English | 中文</p>
-    <div class="mt-2">
-      <a href="#" class="mr-4">Facebook</a>
-      <a href="#" class="mr-4">Instagram</a>
+  <footer class="bg-green-200 p-8 text-center text-lg">
+    <p class="mb-2">&copy; 2025 NLT SG. All rights reserved.</p>
+    <p class="mb-4">Language: English | 中文</p>
+    <div>
+      <a href="#" class="mr-6 underline">Facebook</a>
+      <a href="#" class="underline">Instagram</a>
     </div>
   </footer>
 
