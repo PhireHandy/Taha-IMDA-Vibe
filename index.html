@@ -113,5 +113,55 @@
     </div>
   </footer>
 
+  <!-- Simple FAQ Chatbot -->
+<div id="chatbot" class="fixed bottom-6 right-6 w-80 bg-white border rounded-lg shadow-lg z-50">
+  <div class="bg-green-700 text-white px-4 py-2 rounded-t-lg flex justify-between items-center">
+    <span>Ask ComfortWear</span>
+    <button onclick="document.getElementById('chatbot').style.display='none'" class="text-white">&times;</button>
+  </div>
+  <div id="chatbot-messages" class="p-4 h-48 overflow-y-auto text-sm"></div>
+  <form id="chatbot-form" class="flex border-t">
+    <input id="chatbot-input" type="text" placeholder="Type your question..." class="flex-1 px-2 py-1 outline-none" autocomplete="off" />
+    <button type="submit" class="bg-green-700 text-white px-3">Send</button>
+  </form>
+</div>
+<button onclick="document.getElementById('chatbot').style.display='block'" class="fixed bottom-6 right-6 bg-green-700 text-white px-4 py-2 rounded-full shadow-lg z-40">Chat</button>
+<!-- End Chatbot -->
+
+<script>
+// Simple FAQ logic
+const faqs = [
+  { q: /delivery|shipping/i, a: "Delivery takes 2–4 business days within Singapore." },
+  { q: /return|refund/i, a: "Returns are accepted within 30 days with tags intact." },
+  { q: /wash|care/i, a: "Our products can be machine washed unless stated otherwise." },
+  { q: /contact|support/i, a: "Email: support@comfortwear.sg | Phone: +65 6123 4567" },
+];
+
+document.getElementById('chatbot-form').onsubmit = function(e) {
+  e.preventDefault();
+  const input = document.getElementById('chatbot-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  addMessage('You', msg);
+  let found = false;
+  for (const faq of faqs) {
+    if (faq.q.test(msg)) {
+      addMessage('Bot', faq.a);
+      found = true;
+      break;
+    }
+  }
+  if (!found) addMessage('Bot', "Sorry, I couldn't find an answer. Please contact support.");
+  input.value = '';
+};
+
+function addMessage(sender, text) {
+  const messages = document.getElementById('chatbot-messages');
+  messages.innerHTML += `<div><b>${sender}:</b> ${text}</div>`;
+  messages.scrollTop = messages.scrollHeight;
+}
+</script>
+
 </body>
+
 </html>
